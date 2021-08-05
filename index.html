@@ -5,9 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
+    <div class="page_title">
+        <h1 class="page_title_h1">TODO LIST BY INDERJEET</h1>
+    </div>
+    <div class="body_div">
+        <div class= "input_div">
+            <div class="input_div_title">
+                <input type="text"placeholder ="Task-Title" class="input_div_title_input">
+            </div>
+            <div class="input_div_description">
+                <textarea placeholder="Task-Description" class="input_div_description_input" name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="whatever" >
+            <button class="submit_button">Add to the list</button>
+
+            </div>
     
+        </div>
+    </div>
+
+    <div class="table_div">
+        <table  class="table_div_table">
+            <thead class="table_div_table_head">
+                <tr class="table_div_table_head_row">
+                    <td class="table_div_table_head_row_data">S.NO</td>
+                    <td class="table_div_table_head_row_data">Title</td>
+                    <td class="">Description</td>
+                    <td class="table_div_table_head_row_data">
+                        <button  class="table_div_table_head_row_data_button" ><h3 style="color:white; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Delete</h3></button></td>
+                </tr>
+            </thead>
+            <tbody class="table_div_body">
+                
+            </tbody>
+                
+
+        </table>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>

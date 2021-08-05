@@ -138,6 +138,9 @@ body{
     width: 80vw;
     margin: auto;
     margin-top: 20px;
+    transition: all .2s ease-in-out;
+    margin-bottom: 40px;
+    
 
 
 
@@ -147,7 +150,9 @@ body{
         position: relative;
         background-color: $color-primary;
         padding: 20px;
-        transition: all .2s ease-in-out;
+        border-radius: 5px;
+        transition: ease-out;
+        
 
         &_head{
             
@@ -159,6 +164,10 @@ body{
 
 
                 &_data{
+
+                    font-weight: bold;
+                    font-style: italic;
+                    font-size: 1.5rem;
 
                     &_button{
                         background-color: $color-secondary;

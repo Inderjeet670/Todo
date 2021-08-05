@@ -85,32 +85,39 @@ body {
 .table_div {
   width: 80vw;
   margin: auto;
-  margin-top: 20px; }
+  margin-top: 20px;
+  transition: all .2s ease-in-out;
+  margin-bottom: 40px; }
   .table_div_table {
     width: 80vw;
     margin: auto;
     position: relative;
     background-color: #1C1C1BFF;
     padding: 20px;
-    transition: all .2s ease-in-out; }
+    border-radius: 5px;
+    transition: ease-out; }
     .table_div_table_head_row {
       color: white;
       font-family: "Cairo", sans-serif; }
-      .table_div_table_head_row_data_button {
-        background-color: #76528BFF;
-        border: none;
-        width: 70px;
-        height: 30px;
-        border-radius: 7px;
-        font-size: 1.1rem;
-        float: right; }
-        .table_div_table_head_row_data_button:hover {
-          transform: translateY(-1px);
-          transition: all .2s ease;
-          box-shadow: 1px 1px 5px white; }
-        .table_div_table_head_row_data_button:active {
-          transform: translateY(0px);
-          transition: all .2s ease; }
+      .table_div_table_head_row_data {
+        font-weight: bold;
+        font-style: italic;
+        font-size: 1.5rem; }
+        .table_div_table_head_row_data_button {
+          background-color: #76528BFF;
+          border: none;
+          width: 70px;
+          height: 30px;
+          border-radius: 7px;
+          font-size: 1.1rem;
+          float: right; }
+          .table_div_table_head_row_data_button:hover {
+            transform: translateY(-1px);
+            transition: all .2s ease;
+            box-shadow: 1px 1px 5px white; }
+          .table_div_table_head_row_data_button:active {
+            transform: translateY(0px);
+            transition: all .2s ease; }
     .table_div_table_body {
       border-top: solid #1C1C1BFF 40px;
       color: white;

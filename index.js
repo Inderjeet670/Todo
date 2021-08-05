@@ -2,6 +2,8 @@ add = document.querySelector(".submit_button");
 tit = document.querySelector(".input_div_title_input");
 desc = document.querySelector(".input_div_description_input");
 insert = document.querySelector('.table_div_body');
+clear = document.querySelector('.clear-button')
+
 
 title = ''
 description = ''
@@ -49,7 +51,7 @@ function update(){
         <td>${index+1}</td>
         <td>${element[0]}</td>
         <td>${element[1]}</td>
-        <td><button  class="table_div_table_head_row_data_button" ><h3 style="color:white; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Delete</h3></button></td></td>
+        <td><button onclick = "deleted(${index})"  class="table_div_table_head_row_data_button" ><h3 style="color:white; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Delete</h3></button></td></td>
     </tr>`
 
     
@@ -78,10 +80,20 @@ function runbegin(){
         <td>${index+1}</td>
         <td>${element[0]}</td>
         <td>${element[1]}</td>
-        <td><button  class="table_div_table_head_row_data_button" ><h3 style="color:white; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Delete</h3></button></td></td>
+        <td><button onclick = "deleted(${index})" class="table_div_table_head_row_data_button" ><h3 style="color:white; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Delete</h3></button></td></td>
 
     </tr>`
 
+        }
+        else{
+        
+            strs += `<tr>
+        <td>${index+1}</td>
+        <td>${element[0]}</td>
+        <td>${element[1]}</td>
+        <td><button onclick = "deleted(${index})" class="table_div_table_head_row_data_button" ><h3 style="color:white; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Delete</h3></button></td></td>
+
+    </tr>`
         }
     
     });
@@ -91,3 +103,21 @@ function runbegin(){
 }
 
 runbegin()
+
+
+
+function deleted(i){
+    jsonlocal = localStorage.getItem('todolist')
+    parsedJson = JSON.parse(jsonlocal);
+    parsedJson.splice(i, 1);
+    localStorage.setItem('todolist',JSON.stringify(parsedJson))
+    console.log(parsedJson);
+
+    runbegin()
+}
+
+
+clear.addEventListener('click',function(){
+    localStorage.clear()
+    runbegin()
+})

@@ -49,7 +49,7 @@ body{
     .input_div{
         display: block;
 
-        .whatever{
+        
             background-color: $color-primary;
             .submit_button{
                 color: white;
@@ -78,7 +78,36 @@ body{
                 }
     
             }
-        }
+
+            .clear-button{
+                color: white;
+                background-color: $color-secondary;
+                outline: none;
+                border: none;
+                padding: 10px;
+                border-radius: 5px;
+                position: absolute;
+                right: 30%;
+                font-weight: 500;
+                font-size: 1.2rem;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                
+
+                &:hover{
+                    transform: translateY(-1px);
+                    transition: all .2s ease;
+                    box-shadow:.5px .5px 4px white;
+
+    
+                }
+                &:active{
+                    transform: translateY(0px);
+                    transition: all .2s ease;
+                }
+    
+
+            }
+        
         
 
 

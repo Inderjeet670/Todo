@@ -29,6 +29,12 @@ body{
         animation-duration: 1s;
         animation-delay: .5s;
         animation-fill-mode: backwards;
+        @media only screen  and (max-width:1330px) {
+            &{
+            font-size: 1.5rem;                
+            }
+        }
+
     }
 
 }
@@ -42,12 +48,33 @@ body{
     border-radius: 4px;
     position: relative;
     height: 34vh;
+    transition: all .5s ease;
+
+
+    @media only screen  and (max-width:1330px) {
+        &{
+            width: 100%;
+        }
+    }
 
     
     
 
     .input_div{
         display: block;
+        height: 50vh;
+        transition: all .5s ease;
+
+
+
+        @media only screen  and (max-width:1330px) {
+            &{
+                width: 100%;
+        transition: all .5s ease;
+
+            }
+        }
+        
 
         
             background-color: $color-primary;
@@ -63,7 +90,6 @@ body{
                 font-weight: 500;
                 font-size: 1.2rem;
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                
 
                 &:hover{
                     transform: translateY(-1px);
@@ -76,6 +102,20 @@ body{
                     transform: translateY(0px);
                     transition: all .2s ease;
                 }
+
+                @media only screen  and (max-width:1330px) {
+                    &{
+                        width: 30vw;
+                        font-size:.9rem;
+                        right: 7%;
+                        
+                        
+                        
+                        
+                    }
+                }
+
+                
     
             }
 
@@ -87,7 +127,7 @@ body{
                 padding: 10px;
                 border-radius: 5px;
                 position: absolute;
-                right: 30%;
+                right: 33%;
                 font-weight: 500;
                 font-size: 1.2rem;
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -104,6 +144,18 @@ body{
                     transform: translateY(0px);
                     transition: all .2s ease;
                 }
+                @media only screen  and (max-width:1330px) {
+                    &{
+                        width: 30vw;
+                        font-size:.9rem;
+                        right:38%;
+                        
+                        
+                        
+                        
+                    }
+                }
+
     
 
             }
@@ -119,6 +171,13 @@ body{
             margin: auto;
             animation: moveInLeft;
             animation-duration: 1s;
+            @media only screen  and (max-width:1330px) {
+                &{
+                    width: 90%;
+                }
+            }
+
+            
             
             
 
@@ -129,6 +188,14 @@ body{
                 font-size: 1.2rem;
                 font-family: $input-font;  
                 outline: none;
+                @media only screen  and (max-width:1330px) {
+                    &{
+                        width: 100%;
+                        margin: auto;
+                        height: 5vh;
+                        font-size: .8rem;
+                    }
+                }
 
                 
             }
@@ -143,6 +210,12 @@ body{
             animation: moveInRight;
             animation-duration: 1s;
 
+            @media only screen  and (max-width:1330px) {
+                &{
+                    width: 90%;
+                }
+            }
+
             &_input{
                width: 50vw;
                height: 10vh;
@@ -151,6 +224,16 @@ body{
                font-family: $input-font;  
                font-weight: 200;
                outline: none;
+
+               
+
+               @media only screen  and (max-width:1330px) {
+                &{
+                    width: 100%;
+                    margin: auto;
+                    font-size: .8rem;
+                }
+            }
 
 
 
@@ -167,9 +250,19 @@ body{
     width: 80vw;
     margin: auto;
     margin-top: 20px;
-    transition: all .2s ease-in-out;
     margin-bottom: 40px;
-    
+    transition: all .5s ease;
+
+
+    @media only screen  and (max-width:1330px) {
+        &{
+            margin-top: 10vh;
+            width: 100%;
+            
+            
+            
+        }
+    }
 
 
 
@@ -180,8 +273,15 @@ body{
         background-color: $color-primary;
         padding: 20px;
         border-radius: 5px;
-        transition: ease-out;
-        
+
+        @media only screen  and (max-width:1330px) {
+            &{
+                width: 100%;
+                
+                
+                
+            }
+        }
 
         &_head{
             
@@ -198,6 +298,16 @@ body{
                     font-style: italic;
                     font-size: 1.5rem;
 
+                    @media only screen  and (max-width:1330px) {
+                        &{
+                            font-size: 1rem;
+                            
+                            
+                            
+                        }
+                    }
+                    
+
                     &_button{
                         background-color: $color-secondary;
                         border: none;
@@ -209,13 +319,21 @@ body{
 
                         &:hover{
                             transform: translateY(-1px);
-                            transition: all .2s ease;
                             box-shadow:1px 1px 5px white;
             
                         }
                         &:active{
                             transform: translateY(0px);
                             transition: all .2s ease;
+                        }
+
+                        @media only screen  and (max-width:1330px) {
+                            &{
+                                font-size: .8rem;
+                                
+                                
+                                
+                            }
                         }
 
                         
@@ -232,6 +350,7 @@ body{
         border-top: solid $color-primary 40px;
         color: $color-white;
         font-family: $input-font;
+        transition: all 1s ease-in;
 
         }
 

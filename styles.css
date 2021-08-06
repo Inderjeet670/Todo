@@ -19,6 +19,9 @@ body {
     animation-duration: 1s;
     animation-delay: .5s;
     animation-fill-mode: backwards; }
+    @media only screen and (max-width: 1330px) {
+      .page_title_h1 {
+        font-size: 1.5rem; } }
 
 .body_div {
   background-color: #1C1C1BFF;
@@ -28,10 +31,20 @@ body {
   margin-top: 4vh;
   border-radius: 4px;
   position: relative;
-  height: 34vh; }
+  height: 34vh;
+  transition: all .5s ease; }
+  @media only screen and (max-width: 1330px) {
+    .body_div {
+      width: 100%; } }
   .body_div .input_div {
     display: block;
+    height: 50vh;
+    transition: all .5s ease;
     background-color: #1C1C1BFF; }
+    @media only screen and (max-width: 1330px) {
+      .body_div .input_div {
+        width: 100%;
+        transition: all .5s ease; } }
     .body_div .input_div .submit_button {
       color: white;
       background-color: #76528BFF;
@@ -51,6 +64,11 @@ body {
       .body_div .input_div .submit_button:active {
         transform: translateY(0px);
         transition: all .2s ease; }
+      @media only screen and (max-width: 1330px) {
+        .body_div .input_div .submit_button {
+          width: 30vw;
+          font-size: .9rem;
+          right: 7%; } }
     .body_div .input_div .clear-button {
       color: white;
       background-color: #76528BFF;
@@ -59,7 +77,7 @@ body {
       padding: 10px;
       border-radius: 5px;
       position: absolute;
-      right: 30%;
+      right: 33%;
       font-weight: 500;
       font-size: 1.2rem;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
@@ -70,6 +88,11 @@ body {
       .body_div .input_div .clear-button:active {
         transform: translateY(0px);
         transition: all .2s ease; }
+      @media only screen and (max-width: 1330px) {
+        .body_div .input_div .clear-button {
+          width: 30vw;
+          font-size: .9rem;
+          right: 38%; } }
     .body_div .input_div_title {
       padding: 40px 0px 20px 0;
       font-size: 30px;
@@ -77,6 +100,9 @@ body {
       margin: auto;
       animation: moveInLeft;
       animation-duration: 1s; }
+      @media only screen and (max-width: 1330px) {
+        .body_div .input_div_title {
+          width: 90%; } }
       .body_div .input_div_title_input {
         padding-left: 10px;
         width: 50vw;
@@ -84,6 +110,12 @@ body {
         font-size: 1.2rem;
         font-family: "Cairo", sans-serif;
         outline: none; }
+        @media only screen and (max-width: 1330px) {
+          .body_div .input_div_title_input {
+            width: 100%;
+            margin: auto;
+            height: 5vh;
+            font-size: .8rem; } }
     .body_div .input_div_description {
       padding: 20px 0px 20px 0;
       font-size: 30px;
@@ -91,6 +123,9 @@ body {
       margin: auto;
       animation: moveInRight;
       animation-duration: 1s; }
+      @media only screen and (max-width: 1330px) {
+        .body_div .input_div_description {
+          width: 90%; } }
       .body_div .input_div_description_input {
         width: 50vw;
         height: 10vh;
@@ -99,21 +134,32 @@ body {
         font-family: "Cairo", sans-serif;
         font-weight: 200;
         outline: none; }
+        @media only screen and (max-width: 1330px) {
+          .body_div .input_div_description_input {
+            width: 100%;
+            margin: auto;
+            font-size: .8rem; } }
 
 .table_div {
   width: 80vw;
   margin: auto;
   margin-top: 20px;
-  transition: all .2s ease-in-out;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  transition: all .5s ease; }
+  @media only screen and (max-width: 1330px) {
+    .table_div {
+      margin-top: 10vh;
+      width: 100%; } }
   .table_div_table {
     width: 80vw;
     margin: auto;
     position: relative;
     background-color: #1C1C1BFF;
     padding: 20px;
-    border-radius: 5px;
-    transition: ease-out; }
+    border-radius: 5px; }
+    @media only screen and (max-width: 1330px) {
+      .table_div_table {
+        width: 100%; } }
     .table_div_table_head_row {
       color: white;
       font-family: "Cairo", sans-serif; }
@@ -121,6 +167,9 @@ body {
         font-weight: bold;
         font-style: italic;
         font-size: 1.5rem; }
+        @media only screen and (max-width: 1330px) {
+          .table_div_table_head_row_data {
+            font-size: 1rem; } }
         .table_div_table_head_row_data_button {
           background-color: #76528BFF;
           border: none;
@@ -131,15 +180,18 @@ body {
           float: right; }
           .table_div_table_head_row_data_button:hover {
             transform: translateY(-1px);
-            transition: all .2s ease;
             box-shadow: 1px 1px 5px white; }
           .table_div_table_head_row_data_button:active {
             transform: translateY(0px);
             transition: all .2s ease; }
+          @media only screen and (max-width: 1330px) {
+            .table_div_table_head_row_data_button {
+              font-size: .8rem; } }
     .table_div_table_body {
       border-top: solid #1C1C1BFF 40px;
       color: white;
-      font-family: "Cairo", sans-serif; }
+      font-family: "Cairo", sans-serif;
+      transition: all 1s ease-in; }
 
 td, tr {
   color: white;
